@@ -6708,14 +6708,14 @@ Pad diameter: 30 mil</description>
 <wire x1="38.1" y1="187.96" x2="5.08" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="187.96" x2="5.08" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="MOTORGND" gate="P" pin="P"/>
 <wire x1="5.08" y1="180.34" x2="5.08" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="172.72" x2="5.08" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="172.72" x2="5.08" y2="172.72" width="0.1524" layer="91"/>
-<junction x="5.08" y="172.72"/>
 <wire x1="-5.08" y1="180.34" x2="5.08" y2="180.34" width="0.1524" layer="91"/>
 <junction x="5.08" y="180.34"/>
 <pinref part="GND" gate="P" pin="P"/>
+<pinref part="MOTORGND" gate="P" pin="P"/>
+<wire x1="-5.08" y1="172.72" x2="5.08" y2="172.72" width="0.1524" layer="91"/>
+<junction x="5.08" y="172.72"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
