@@ -2829,7 +2829,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
 </package>
 <package name="VMTA55">
 <description>&lt;b&gt;Bulk Metal® Foil Technology&lt;/b&gt;, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements&lt;p&gt;
@@ -6196,14 +6196,14 @@ Source: AVX .. aphvc.pdf</description>
 <packages>
 <package name="1,6/0,8">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.508" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.762" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="-0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="-0.508" x2="0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="-0.762" x2="0.508" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-0.508" y1="-0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="51"/>
 <circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
 <pad name="1" x="0" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
@@ -6436,21 +6436,13 @@ Source: AVX .. aphvc.pdf</description>
 
 Drill diameter: 15 mil
 Pad diameter: 30 mil</description>
-<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.762"/>
 <circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.762"/>
 <text x="-1.2192" y="0.762" size="0.508" layer="25">&gt;Name</text>
 <text x="-1.2192" y="-1.2446" size="0.508" layer="27">&gt;Value</text>
 </package>
 <package name="SJ">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="0.762" y1="-0.381" x2="-0.762" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.381" x2="0.889" y2="0.254" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-0.889" y1="0.254" x2="-0.762" y2="0.381" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-0.889" y1="-0.254" x2="-0.762" y2="-0.381" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="-0.381" x2="0.889" y2="-0.254" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.889" y1="-0.254" x2="0.889" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-0.889" y1="-0.254" x2="-0.889" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="0.381" x2="0.762" y2="0.381" width="0.1524" layer="21"/>
 <wire x1="0.381" y1="0" x2="0.635" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.381" y1="0" x2="-0.635" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.254" y1="-0.0762" x2="-0.254" y2="0.0762" width="0.254" layer="51" curve="-180" cap="flat"/>
@@ -6503,9 +6495,9 @@ Pad diameter: 30 mil</description>
 <symbol name="PAD">
 <wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="SJ">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
