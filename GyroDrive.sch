@@ -6613,9 +6613,9 @@ Pad diameter: 30 mil</description>
 <part name="E4" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="E5" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="REF" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
-<part name="SJ1" library="michael-stetner" deviceset="SJ" device=""/>
-<part name="SJ2" library="michael-stetner" deviceset="SJ" device=""/>
-<part name="SJ3" library="michael-stetner" deviceset="SJ" device=""/>
+<part name="J_GND" library="michael-stetner" deviceset="SJ" device=""/>
+<part name="J_SDA" library="michael-stetner" deviceset="SJ" device=""/>
+<part name="J_SCL" library="michael-stetner" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6671,9 +6671,9 @@ Pad diameter: 30 mil</description>
 <instance part="E4" gate="P" x="114.3" y="177.8"/>
 <instance part="E5" gate="P" x="114.3" y="167.64"/>
 <instance part="REF" gate="P" x="114.3" y="157.48"/>
-<instance part="SJ1" gate="1" x="137.16" y="88.9"/>
-<instance part="SJ2" gate="1" x="137.16" y="78.74"/>
-<instance part="SJ3" gate="1" x="137.16" y="68.58"/>
+<instance part="J_GND" gate="1" x="137.16" y="88.9"/>
+<instance part="J_SDA" gate="1" x="137.16" y="78.74"/>
+<instance part="J_SCL" gate="1" x="137.16" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -6811,12 +6811,12 @@ Pad diameter: 30 mil</description>
 <segment>
 <wire x1="132.08" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <label x="124.46" y="88.9" size="1.778" layer="95"/>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="J_GND" gate="1" pin="1"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <label x="149.86" y="88.9" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="J_GND" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -6919,12 +6919,12 @@ Pad diameter: 30 mil</description>
 <segment>
 <wire x1="132.08" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 <label x="124.46" y="78.74" size="1.778" layer="95"/>
-<pinref part="SJ2" gate="1" pin="1"/>
+<pinref part="J_SDA" gate="1" pin="1"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="78.74" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
 <label x="149.86" y="78.74" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="J_SDA" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -6950,12 +6950,12 @@ Pad diameter: 30 mil</description>
 <segment>
 <wire x1="132.08" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
 <label x="124.46" y="68.58" size="1.778" layer="95"/>
-<pinref part="SJ3" gate="1" pin="1"/>
+<pinref part="J_SCL" gate="1" pin="1"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="149.86" y="68.58" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SJ3" gate="1" pin="2"/>
+<pinref part="J_SCL" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
