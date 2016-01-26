@@ -6153,6 +6153,12 @@ Pad diameter: 30 mil</description>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
+<package name="SMD1,27-2,54">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PAD">
@@ -6189,6 +6195,13 @@ Pad diameter: 30 mil</description>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="PAD-1">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6256,6 +6269,22 @@ Pad diameter: 30 mil</description>
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD2" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="PAD-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD1,27-2,54">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6632,6 +6661,9 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8235.pdf</desc
 <part name="E4" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="VGND" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="J_VGND" library="michael-stetner" deviceset="SJ" device=""/>
+<part name="SHIELD1" library="michael-stetner" deviceset="SMD2" device=""/>
+<part name="SHIELD2" library="michael-stetner" deviceset="SMD2" device=""/>
+<part name="SHIELD3" library="michael-stetner" deviceset="SMD2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6752,6 +6784,9 @@ For Debugging</text>
 <attribute name="VALUE" x="161.417" y="-76.962" size="1.778" layer="96"/>
 </instance>
 <instance part="J_VGND" gate="1" x="106.68" y="-53.34"/>
+<instance part="SHIELD1" gate="1" x="81.28" y="68.58" rot="R180"/>
+<instance part="SHIELD2" gate="1" x="81.28" y="60.96" rot="R180"/>
+<instance part="SHIELD3" gate="1" x="81.28" y="53.34" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7070,6 +7105,19 @@ For Debugging</text>
 <pinref part="U$1" gate="G$1" pin="D"/>
 <wire x1="35.56" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <label x="53.34" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SHIELD1" gate="1" pin="P"/>
+<wire x1="78.74" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="68.58" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SHIELD2" gate="1" pin="P"/>
+<wire x1="60.96" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<junction x="60.96" y="60.96"/>
+<pinref part="SHIELD3" gate="1" pin="P"/>
+<wire x1="60.96" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="53.34" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
+<label x="45.72" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">

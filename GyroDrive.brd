@@ -1333,6 +1333,12 @@ Pad diameter: 30 mil</description>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.381" x2="0.0762" y2="0.381" layer="29"/>
 </package>
+<package name="SMD1,27-2,54">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="GFL">
@@ -1722,6 +1728,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="E4" library="michael-stetner" package="30MIL/15MIL" value="" x="5.715" y="1.0668"/>
 <element name="VGND" library="michael-stetner" package="30MIL/15MIL" value="" x="14.478" y="2.032"/>
 <element name="J_VGND" library="michael-stetner" package="SJ" value="" x="14.478" y="3.556" rot="MR90"/>
+<element name="SHIELD1" library="michael-stetner" package="SMD1,27-2,54" value="" x="14.605" y="12.954"/>
+<element name="SHIELD2" library="michael-stetner" package="SMD1,27-2,54" value="" x="9.8298" y="12.954"/>
+<element name="SHIELD3" library="michael-stetner" package="SMD1,27-2,54" value="" x="9.779" y="6.9342"/>
 </elements>
 <signals>
 <signal name="-VS">
@@ -1993,15 +2002,15 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <wire x1="8.397" y1="9.525" x2="8.27" y2="9.652" width="0.1524" layer="1"/>
 <wire x1="8.27" y1="9.652" x2="9.144" y2="9.652" width="0.254" layer="1"/>
-<wire x1="9.271" y1="11.176" x2="9.271" y2="12.827" width="0.254" layer="1"/>
-<wire x1="9.271" y1="12.827" x2="9.144" y2="12.827" width="0.1524" layer="1"/>
-<wire x1="8.445" y1="11.176" x2="9.271" y2="11.176" width="0.254" layer="1"/>
+<wire x1="9.2456" y1="11.176" x2="9.2456" y2="12.827" width="0.254" layer="1"/>
+<wire x1="9.2456" y1="12.827" x2="9.144" y2="12.827" width="0.1524" layer="1"/>
+<wire x1="8.445" y1="11.176" x2="9.2456" y2="11.176" width="0.254" layer="1"/>
 <wire x1="8.397" y1="12.827" x2="9.144" y2="12.827" width="0.254" layer="1"/>
 <via x="9.144" y="12.827" extent="1-16" drill="0.254"/>
 <via x="9.144" y="9.652" extent="1-16" drill="0.254"/>
-<wire x1="9.144" y1="9.652" x2="9.271" y2="9.652" width="0.1524" layer="1"/>
-<wire x1="9.271" y1="9.652" x2="9.271" y2="11.176" width="0.254" layer="1"/>
-<via x="9.271" y="11.176" extent="1-16" drill="0.254"/>
+<wire x1="9.144" y1="9.652" x2="9.2456" y2="9.652" width="0.1524" layer="1"/>
+<wire x1="9.2456" y1="9.652" x2="9.2456" y2="11.176" width="0.254" layer="1"/>
+<via x="9.2456" y="11.176" extent="1-16" drill="0.254"/>
 <wire x1="14.478" y1="11.445" x2="14.478" y2="11.2268" width="0.1524" layer="1"/>
 <wire x1="14.478" y1="11.2268" x2="13.8176" y2="11.2268" width="0.254" layer="1"/>
 <via x="13.589" y="11.2268" extent="1-16" drill="0.254"/>
@@ -2023,6 +2032,17 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.207" y1="6.731" x2="5.207" y2="7.366" width="0.254" layer="15"/>
 <wire x1="10.084" y1="9.6932" x2="9.144" y2="9.6932" width="0.1524" layer="1"/>
 <wire x1="9.144" y1="9.6932" x2="9.144" y2="9.652" width="0.1524" layer="1"/>
+<contactref element="SHIELD1" pad="1"/>
+<contactref element="SHIELD2" pad="1"/>
+<contactref element="SHIELD3" pad="1"/>
+<wire x1="9.779" y1="6.9342" x2="9.0932" y2="6.9342" width="0.254" layer="1"/>
+<via x="9.0932" y="6.9342" extent="1-16" drill="0.254"/>
+<wire x1="9.0932" y1="6.9342" x2="9.017" y2="6.9342" width="0.254" layer="15"/>
+<wire x1="14.605" y1="12.954" x2="13.9192" y2="12.954" width="0.254" layer="1"/>
+<via x="13.9192" y="12.954" extent="1-16" drill="0.254"/>
+<wire x1="13.9192" y1="12.954" x2="13.843" y2="12.954" width="0.254" layer="15"/>
+<wire x1="9.2456" y1="12.827" x2="9.8298" y2="12.827" width="0.254" layer="1"/>
+<wire x1="9.8298" y1="12.827" x2="9.8298" y2="12.954" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U3" pad="24"/>
