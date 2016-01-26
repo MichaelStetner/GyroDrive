@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6336,7 +6336,6 @@ by exp-lbrs.ulp</description>
 <smd name="22" x="-0.2" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 <smd name="23" x="-0.6" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 <smd name="24" x="-1" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
-<smd name="25" x="0" y="0" dx="1.7" dy="1.54" layer="1" roundness="50"/>
 <text x="-1.27" y="2.159" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.27" y="-0.635" size="0.635" layer="27" ratio="11">&gt;VALUE</text>
 </package>
@@ -6384,7 +6383,6 @@ by exp-lbrs.ulp</description>
 <wire x1="-12.7" y1="-10.16" x2="-11.43" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="-12.7" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="-13.97" y1="-15.24" x2="-11.43" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="0" y1="-19.05" x2="0" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="11.43" y1="-15.24" x2="10.16" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="11.43" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
@@ -6413,7 +6411,6 @@ by exp-lbrs.ulp</description>
 <pin name="NC@7" x="13.97" y="-7.62" length="short" rot="R180"/>
 <pin name="NC@8" x="13.97" y="-5.08" length="short" rot="R180"/>
 <pin name="NCS" x="13.97" y="7.62" length="short" rot="R180"/>
-<pin name="PAD" x="0" y="-21.59" length="short" rot="R90"/>
 <pin name="REGOUT" x="-15.24" y="-10.16" length="short"/>
 <pin name="RESV" x="-15.24" y="12.7" length="short"/>
 <pin name="RESV@1" x="13.97" y="0" length="short" rot="R180"/>
@@ -6450,7 +6447,6 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="NC@7" pad="16"/>
 <connect gate="G$1" pin="NC@8" pad="17"/>
 <connect gate="G$1" pin="NCS" pad="22"/>
-<connect gate="G$1" pin="PAD" pad="25"/>
 <connect gate="G$1" pin="REGOUT" pad="10"/>
 <connect gate="G$1" pin="RESV" pad="1"/>
 <connect gate="G$1" pin="RESV@1" pad="19"/>
