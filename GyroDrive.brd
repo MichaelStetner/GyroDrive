@@ -1721,6 +1721,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="E3" library="michael-stetner" package="30MIL/15MIL" value="" x="8.255" y="1.0668"/>
 <element name="E4" library="michael-stetner" package="30MIL/15MIL" value="" x="5.715" y="1.0668"/>
 <element name="VGND" library="michael-stetner" package="30MIL/15MIL" value="" x="14.478" y="2.032"/>
+<element name="J_VGND" library="michael-stetner" package="SJ" value="" x="14.478" y="3.556" rot="MR90"/>
 </elements>
 <signals>
 <signal name="-VS">
@@ -1897,6 +1898,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.187" y1="3.81" x2="4.191" y2="3.814" width="0.1524" layer="16"/>
 <wire x1="4.191" y1="3.814" x2="4.191" y2="4.445" width="0.1524" layer="16"/>
 <via x="4.191" y="4.445" extent="1-16" drill="0.254"/>
+<contactref element="J_VGND" pad="2"/>
+<wire x1="14.478" y1="3.937" x2="14.478" y2="4.826" width="0.254" layer="16"/>
+<via x="14.478" y="4.826" extent="1-16" drill="0.254"/>
+<wire x1="14.478" y1="4.826" x2="14.478" y2="4.953" width="0.254" layer="15"/>
 </signal>
 <signal name="S1">
 <contactref element="IC1" pad="B1"/>
@@ -1939,6 +1944,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.283" y1="2.294" x2="9.283" y2="0.4572" width="0.1524" layer="16"/>
 <wire x1="11.823" y1="2.294" x2="11.823" y2="0.4572" width="0.1524" layer="16"/>
 <wire x1="6.743" y1="2.294" x2="6.743" y2="0.4572" width="0.1524" layer="16"/>
+<contactref element="J_VGND" pad="1"/>
+<wire x1="14.478" y1="3.175" x2="14.478" y2="2.032" width="0.254" layer="16"/>
 </signal>
 <signal name="S3">
 <contactref element="IC3" pad="B1"/>

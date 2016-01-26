@@ -6631,6 +6631,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8235.pdf</desc
 <part name="E3" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="E4" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="VGND" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
+<part name="J_VGND" library="michael-stetner" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6750,6 +6751,7 @@ For Debugging</text>
 <attribute name="NAME" x="158.877" y="-74.3458" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.417" y="-76.962" size="1.778" layer="96"/>
 </instance>
+<instance part="J_VGND" gate="1" x="106.68" y="-53.34"/>
 </instances>
 <busses>
 </busses>
@@ -6930,6 +6932,11 @@ For Debugging</text>
 <pinref part="SUPPLY23" gate="G$1" pin="AGND"/>
 <wire x1="332.74" y1="-71.12" x2="332.74" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J_VGND" gate="1" pin="2"/>
+<wire x1="111.76" y1="-53.34" x2="132.08" y2="-53.34" width="0.1524" layer="91"/>
+<label x="132.08" y="-53.34" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="S1" class="0">
 <segment>
@@ -6979,6 +6986,11 @@ For Debugging</text>
 <segment>
 <pinref part="VGND" gate="P" pin="P"/>
 <wire x1="165.1" y1="-73.66" x2="180.34" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J_VGND" gate="1" pin="1"/>
+<wire x1="101.6" y1="-53.34" x2="86.36" y2="-53.34" width="0.1524" layer="91"/>
+<label x="86.36" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S3" class="0">
