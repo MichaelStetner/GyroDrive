@@ -12,6 +12,7 @@ Here is the pinout solder pads, as viewed from above with the connector pins poi
 | Stim in  |    IX    |    -VS   |    S2    |    S1    |    DGND  |    SDA   |
 
 Here is the same pinout for the connector pins, as viewed looking head on into the pins with the board on the bottom
+
 |          |          |          |          |          |          |          |
 |----------|----------|----------|----------|----------|----------|----------|
 |    SDA   |   DGND   |    S1    |    S2    |   -VS    |    IX    | Stim in  |
