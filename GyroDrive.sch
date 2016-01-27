@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2649,7 +2649,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
 </package>
 <package name="VMTA55">
 <description>&lt;b&gt;Bulk Metal® Foil Technology&lt;/b&gt;, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements&lt;p&gt;
@@ -6072,8 +6072,8 @@ In this library the device names are the same as the pin names of the symbols, t
 
 Drill diameter: 15 mil
 Pad diameter: 30 mil</description>
-<circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
 <pad name="P$1" x="0" y="0" drill="0.381" diameter="0.762"/>
+<circle x="0" y="0" radius="0.635" width="0.127" layer="51"/>
 <text x="-1.2192" y="0.762" size="0.508" layer="25">&gt;Name</text>
 <text x="-1.2192" y="-1.2446" size="0.508" layer="27">&gt;Value</text>
 </package>
@@ -6091,6 +6091,11 @@ Pad diameter: 30 mil</description>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<rectangle x1="-0.85" y1="0.45" x2="-0.45" y2="1.2" layer="31"/>
+<rectangle x1="0.45" y1="0.45" x2="0.85" y2="1.2" layer="31"/>
+<rectangle x1="-0.8382" y1="-1.1684" x2="-0.508" y2="-0.4826" layer="31"/>
+<rectangle x1="-0.1651" y1="-1.1684" x2="0.1651" y2="-0.4826" layer="31"/>
+<rectangle x1="0.508" y1="-1.1684" x2="0.8382" y2="-0.4826" layer="31"/>
 <smd name="1" x="-0.65" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <smd name="2" x="0" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <smd name="3" x="0.65" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
@@ -6098,11 +6103,6 @@ Pad diameter: 30 mil</description>
 <smd name="5" x="-0.65" y="0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <text x="-0.889" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.85" y1="0.45" x2="-0.45" y2="1.2" layer="31"/>
-<rectangle x1="0.45" y1="0.45" x2="0.85" y2="1.2" layer="31"/>
-<rectangle x1="-0.8382" y1="-1.1684" x2="-0.508" y2="-0.4826" layer="31"/>
-<rectangle x1="-0.1651" y1="-1.1684" x2="0.1651" y2="-0.4826" layer="31"/>
-<rectangle x1="0.508" y1="-1.1684" x2="0.8382" y2="-0.4826" layer="31"/>
 </package>
 <package name="SJ">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
@@ -6110,11 +6110,11 @@ Pad diameter: 30 mil</description>
 <wire x1="-0.381" y1="0" x2="-0.635" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.254" y1="-0.0762" x2="-0.254" y2="0.0762" width="0.254" layer="51" curve="-180" cap="flat"/>
 <wire x1="0.254" y1="0.0762" x2="0.254" y2="-0.0762" width="0.254" layer="51" curve="-180" cap="flat"/>
+<rectangle x1="-0.0762" y1="-0.381" x2="0.0762" y2="0.381" layer="29"/>
 <smd name="1" x="-0.381" y="0" dx="0.508" dy="0.508" layer="1"/>
 <smd name="2" x="0.381" y="0" dx="0.508" dy="0.508" layer="1"/>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.381" x2="0.0762" y2="0.381" layer="29"/>
 </package>
 <package name="SJW">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
@@ -6132,10 +6132,6 @@ Pad diameter: 30 mil</description>
 <wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
 <wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
-<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
 <rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
 <rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
@@ -6152,21 +6148,19 @@ Pad diameter: 30 mil</description>
 <rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
-</package>
-<package name="SMD1,27-2,54">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1"/>
-<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
 <symbol name="PAD">
 <wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="MOTOR">
 <text x="0" y="0" size="3.81" layer="94" align="center">MOTOR</text>
@@ -6180,28 +6174,21 @@ Pad diameter: 30 mil</description>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-0.254" y="5.842" size="1.778" layer="94">&gt;NAME</text>
-<text x="-11.43" y="5.842" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
 <pin name="IN" x="-12.7" y="0" length="middle"/>
 <pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
+<text x="-0.254" y="5.842" size="1.778" layer="94">&gt;NAME</text>
+<text x="-11.43" y="5.842" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="SJ">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="PAD-1">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6269,22 +6256,6 @@ Pad diameter: 30 mil</description>
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMD2" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMD1,27-2,54">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6717,9 +6688,6 @@ LETTER landscape</description>
 <part name="E4" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="VGND" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="J_VGND" library="michael-stetner" deviceset="SJ" device=""/>
-<part name="SHIELD1" library="michael-stetner" deviceset="SMD2" device=""/>
-<part name="SHIELD2" library="michael-stetner" deviceset="SMD2" device=""/>
-<part name="SHIELD3" library="michael-stetner" deviceset="SMD2" device=""/>
 <part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
 </parts>
 <sheets>
@@ -6841,9 +6809,6 @@ For Debugging</text>
 <attribute name="VALUE" x="161.417" y="-76.962" size="1.778" layer="96"/>
 </instance>
 <instance part="J_VGND" gate="1" x="48.26" y="-60.96"/>
-<instance part="SHIELD1" gate="1" x="241.3" y="-99.06" rot="R180"/>
-<instance part="SHIELD2" gate="1" x="241.3" y="-106.68" rot="R180"/>
-<instance part="SHIELD3" gate="1" x="241.3" y="-114.3" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 </instances>
@@ -7161,19 +7126,6 @@ For Debugging</text>
 <pinref part="U$1" gate="G$1" pin="D"/>
 <wire x1="149.86" y1="-119.38" x2="177.8" y2="-119.38" width="0.1524" layer="91"/>
 <label x="167.64" y="-119.38" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SHIELD1" gate="1" pin="P"/>
-<wire x1="238.76" y1="-99.06" x2="220.98" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="-99.06" x2="220.98" y2="-106.68" width="0.1524" layer="91"/>
-<pinref part="SHIELD2" gate="1" pin="P"/>
-<wire x1="220.98" y1="-106.68" x2="238.76" y2="-106.68" width="0.1524" layer="91"/>
-<junction x="220.98" y="-106.68"/>
-<pinref part="SHIELD3" gate="1" pin="P"/>
-<wire x1="220.98" y1="-114.3" x2="238.76" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="-114.3" x2="220.98" y2="-106.68" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="-106.68" x2="205.74" y2="-106.68" width="0.1524" layer="91"/>
-<label x="205.74" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
