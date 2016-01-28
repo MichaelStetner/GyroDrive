@@ -6712,6 +6712,8 @@ LETTER landscape</description>
 <part name="VGND" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="AGND" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="E1" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0201"/>
+<part name="SUPPLY3" library="supply2" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6817,6 +6819,8 @@ For Debugging</text>
 <instance part="VGND" gate="1" x="96.52" y="139.7"/>
 <instance part="AGND" gate="1" x="96.52" y="132.08"/>
 <instance part="E1" gate="1" x="96.52" y="177.8"/>
+<instance part="C1" gate="G$1" x="104.14" y="106.68" rot="R90"/>
+<instance part="SUPPLY3" gate="G$1" x="109.22" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -7138,6 +7142,10 @@ For Debugging</text>
 <wire x1="152.4" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
 <label x="170.18" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="DGND"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -7146,10 +7154,10 @@ For Debugging</text>
 <label x="213.36" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="104.14" y="93.98" size="1.778" layer="95"/>
 <pinref part="J_SDA" gate="1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<label x="104.14" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7225,6 +7233,9 @@ For Debugging</text>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="106.68" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="VDD5" gate="G$1" pin="VDD"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<junction x="96.52" y="106.68"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
