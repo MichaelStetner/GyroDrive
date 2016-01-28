@@ -9,17 +9,17 @@
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="13" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="13" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="11" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="11" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -1912,21 +1912,26 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="S1">
 <contactref element="IC1" pad="B1"/>
-<contactref element="U$1" pad="E"/>
-<wire x1="3.302" y1="3.2004" x2="3.302" y2="7.6454" width="0.1524" layer="1"/>
 <wire x1="7.374" y1="13.7708" x2="5.9984" y2="13.7708" width="0.1524" layer="16"/>
-<via x="3.302" y="7.6454" extent="1-16" drill="0.254"/>
-<wire x1="3.302" y1="7.6454" x2="3.302" y2="11.049" width="0.1524" layer="16"/>
-<wire x1="3.302" y1="11.049" x2="5.9984" y2="13.7708" width="0.1524" layer="16"/>
+<via x="4.3688" y="7.5438" extent="1-16" drill="0.254"/>
+<wire x1="4.3688" y1="7.5438" x2="4.3434" y2="11.9888" width="0.1524" layer="16"/>
+<wire x1="4.3434" y1="11.9888" x2="5.9984" y2="13.7708" width="0.1524" layer="16"/>
+<contactref element="U$1" pad="R"/>
+<wire x1="4.3688" y1="7.5438" x2="4.572" y2="7.3406" width="0.1524" layer="1"/>
+<wire x1="4.572" y1="7.3406" x2="4.572" y2="3.2004" width="0.1524" layer="1"/>
 </signal>
 <signal name="S2">
 <contactref element="IC2" pad="B1"/>
-<contactref element="U$1" pad="N"/>
 <wire x1="7.374" y1="11.1292" x2="6.0492" y2="11.1292" width="0.1524" layer="16"/>
-<wire x1="6.0492" y1="11.1292" x2="3.937" y2="9.017" width="0.1524" layer="16"/>
-<wire x1="3.937" y1="9.017" x2="3.937" y2="7.6454" width="0.1524" layer="16"/>
-<via x="3.937" y="7.6454" extent="1-16" drill="0.254"/>
-<wire x1="3.937" y1="7.6454" x2="3.937" y2="3.2004" width="0.1524" layer="1"/>
+<wire x1="6.0492" y1="11.1292" x2="5.1054" y2="10.1854" width="0.1524" layer="16"/>
+<wire x1="5.1054" y1="10.1854" x2="5.1308" y2="7.5438" width="0.1524" layer="16"/>
+<via x="5.1308" y="7.5438" extent="1-16" drill="0.254"/>
+<contactref element="U$1" pad="L"/>
+<wire x1="5.1308" y1="7.5438" x2="5.1816" y2="5.1562" width="0.1524" layer="1"/>
+<wire x1="5.1816" y1="5.1562" x2="4.9784" y2="4.953" width="0.1524" layer="1"/>
+<wire x1="4.9784" y1="4.953" x2="4.9784" y2="4.5466" width="0.1524" layer="1"/>
+<wire x1="4.9784" y1="4.5466" x2="5.207" y2="4.318" width="0.1524" layer="1"/>
+<wire x1="5.207" y1="4.318" x2="5.207" y2="3.2004" width="0.1524" layer="1"/>
 </signal>
 <signal name="VGND">
 <contactref element="IC1" pad="A3"/>
@@ -1955,11 +1960,13 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="S3">
 <contactref element="IC3" pad="B1"/>
 <contactref element="U$1" pad="F"/>
-<wire x1="7.374" y1="8.4876" x2="5.1856" y2="8.4876" width="0.1524" layer="16"/>
-<wire x1="5.1856" y1="8.4876" x2="4.572" y2="7.874" width="0.1524" layer="16"/>
-<wire x1="4.572" y1="7.874" x2="4.572" y2="1.4986" width="0.1524" layer="16"/>
 <via x="4.572" y="1.4986" extent="1-16" drill="0.254"/>
 <wire x1="4.572" y1="1.4986" x2="4.572" y2="2.1971" width="0.1524" layer="1"/>
+<wire x1="7.374" y1="8.4876" x2="6.0238" y2="8.4876" width="0.1524" layer="16"/>
+<wire x1="6.0238" y1="8.4876" x2="5.8166" y2="8.2804" width="0.1524" layer="16"/>
+<wire x1="5.8166" y1="8.2804" x2="5.8166" y2="6.477" width="0.1524" layer="16"/>
+<wire x1="5.8166" y1="6.477" x2="4.572" y2="5.2324" width="0.1524" layer="16"/>
+<wire x1="4.572" y1="5.2324" x2="4.572" y2="1.4986" width="0.1524" layer="16"/>
 </signal>
 <signal name="S4">
 <contactref element="IC4" pad="B1"/>
@@ -2124,17 +2131,15 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="SDAOUT">
 <contactref element="J_SDA" pad="2"/>
-<contactref element="U$1" pad="L"/>
-<wire x1="4.953" y1="8.4074" x2="4.9784" y2="4.5466" width="0.1524" layer="1"/>
-<wire x1="4.9784" y1="4.5466" x2="5.207" y2="4.318" width="0.1524" layer="1"/>
-<wire x1="5.207" y1="4.318" x2="5.207" y2="3.2004" width="0.1524" layer="1"/>
-<wire x1="4.953" y1="8.4074" x2="4.953" y2="8.89" width="0.1524" layer="1"/>
+<contactref element="U$1" pad="N"/>
+<wire x1="4.953" y1="8.89" x2="3.937" y2="7.874" width="0.1524" layer="1"/>
+<wire x1="3.937" y1="7.874" x2="3.937" y2="3.2004" width="0.1524" layer="1"/>
 </signal>
 <signal name="SCLOUT">
 <contactref element="J_SCL" pad="2"/>
-<wire x1="4.572" y1="8.2296" x2="3.937" y2="8.89" width="0.1524" layer="1"/>
-<contactref element="U$1" pad="R"/>
-<wire x1="4.572" y1="8.2296" x2="4.572" y2="3.2004" width="0.1524" layer="1"/>
+<contactref element="U$1" pad="E"/>
+<wire x1="3.937" y1="8.89" x2="3.302" y2="8.255" width="0.1524" layer="1"/>
+<wire x1="3.302" y1="8.255" x2="3.302" y2="3.2004" width="0.1524" layer="1"/>
 </signal>
 <signal name="IX">
 <contactref element="IX" pad="P$1"/>
@@ -2257,6 +2262,15 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="7,39,d76816416587dc91"/>
 <approved hash="7,39,2efe0006000b2ef3"/>
 <approved hash="7,39,29fe3406340b29f3"/>
+<approved hash="5,1,04913317a92fd7d6"/>
+<approved hash="19,1,2c052370f6bcb652"/>
+<approved hash="19,1,08ea3beb06bd7a27"/>
+<approved hash="5,1,c6f7741ea9c35255"/>
+<approved hash="5,1,06942d19a52fd7d3"/>
+<approved hash="19,1,1e35028e911b2e3a"/>
+<approved hash="19,1,14ea3be000b78c27"/>
+<approved hash="5,1,ffd47ffe27d99756"/>
+<approved hash="5,1,db2f7779c8f0412f"/>
 </errors>
 </board>
 </drawing>

@@ -7015,9 +7015,9 @@ For Debugging</text>
 <label x="58.42" y="157.48" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="E"/>
-<wire x1="137.16" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
-<label x="114.3" y="40.64" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="R"/>
+<wire x1="137.16" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<label x="114.3" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S2" class="0">
@@ -7027,9 +7027,9 @@ For Debugging</text>
 <label x="58.42" y="111.76" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="N"/>
-<wire x1="137.16" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-<label x="114.3" y="43.18" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="L"/>
+<wire x1="137.16" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<label x="114.3" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VGND" class="0">
@@ -7250,9 +7250,9 @@ For Debugging</text>
 <pinref part="J_SDA" gate="1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="L"/>
-<wire x1="137.16" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
-<label x="114.3" y="48.26" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="N"/>
+<wire x1="137.16" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+<label x="114.3" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCLOUT" class="0">
@@ -7262,9 +7262,9 @@ For Debugging</text>
 <pinref part="J_SCL" gate="1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="R"/>
-<wire x1="137.16" y1="45.72" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
-<label x="114.3" y="45.72" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="E"/>
+<wire x1="137.16" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
+<label x="114.3" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IX" class="0">
