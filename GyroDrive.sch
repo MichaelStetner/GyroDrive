@@ -6847,17 +6847,12 @@ For Debugging</text>
 <pinref part="C22" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="T"/>
-<wire x1="137.16" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
-<label x="114.3" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+VS" class="0">
-<segment>
 <pinref part="U$1" gate="G$1" pin="U"/>
 <wire x1="137.16" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="114.3" y="53.34" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="+VS" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="IN"/>
 <wire x1="138.43" y1="154.94" x2="130.81" y2="154.94" width="0.1524" layer="91"/>
@@ -6908,6 +6903,11 @@ For Debugging</text>
 <pinref part="IC4" gate="G$1" pin="SDN"/>
 <wire x1="43.18" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 <label x="58.42" y="22.86" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="T"/>
+<wire x1="137.16" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="114.3" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AGND" class="0">
