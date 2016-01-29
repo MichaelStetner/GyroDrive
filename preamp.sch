@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1012,45 +1012,6 @@ Dual, Low Power, G = 10, 100</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="wirepad">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SMD1,27-2,54">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SMD2" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMD1,27-2,54">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1075,15 +1036,9 @@ Dual, Low Power, G = 10, 100</description>
 <part name="R7" library="elm" deviceset="R0805ELM" device="" value="10k"/>
 <part name="C4" library="elm" deviceset="C0805ELM" device="" value="100nF"/>
 <part name="C5" library="elm" deviceset="C0805ELM" device="" value="100nF"/>
-<part name="R8" library="elm" deviceset="R0805ELM" device="" value="22k"/>
-<part name="C6" library="elm" deviceset="C0805ELM" device="" value="47nF"/>
-<part name="R9" library="elm" deviceset="R0805ELM" device="" value="1.5M"/>
 <part name="U$3" library="elm" deviceset="MMD1P22G-26-M101" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X8" device=""/>
 <part name="U$2" library="elm" deviceset="HALL_ON_SIDE" device="" value="HALL"/>
-<part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD2" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD3" library="wirepad" deviceset="SMD2" device=""/>
 <part name="IC3" library="burr-brown" deviceset="INA2141" device="U"/>
 <part name="C7" library="elm" deviceset="C0805ELM" device="" value="47nF"/>
 <part name="C8" library="elm" deviceset="C0805ELM" device="" value="47nF"/>
@@ -1103,7 +1058,6 @@ Dual, Low Power, G = 10, 100</description>
 <text x="-106.68" y="43.18" size="1.778" layer="91">Gain = 10</text>
 <text x="-106.68" y="63.5" size="1.778" layer="91">Gain = 10</text>
 <text x="-220.98" y="33.02" size="1.778" layer="91">Provide Hall sensor with 1mA current</text>
-<text x="-210.82" y="96.52" size="1.778" layer="91">Toggle switch</text>
 <text x="-10.16" y="142.24" size="1.778" layer="91">last 4 pins are lower case</text>
 <text x="-213.36" y="190.5" size="1.778" layer="91">16 pin connector -&gt; Omnetics 14 pin</text>
 <text x="-106.68" y="127" size="1.778" layer="91">Gain = 10</text>
@@ -1125,15 +1079,9 @@ Dual, Low Power, G = 10, 100</description>
 <instance part="R7" gate="G$1" x="-203.2" y="38.1" rot="R180"/>
 <instance part="C4" gate="G$1" x="-213.36" y="81.28"/>
 <instance part="C5" gate="G$1" x="-213.36" y="63.5"/>
-<instance part="R8" gate="G$1" x="-200.66" y="139.7" rot="R90"/>
-<instance part="C6" gate="G$1" x="-193.04" y="134.62"/>
-<instance part="R9" gate="G$1" x="-172.72" y="139.7" rot="R90"/>
 <instance part="U$3" gate="G$1" x="10.16" y="187.96"/>
 <instance part="JP1" gate="A" x="-195.58" y="205.74"/>
 <instance part="U$2" gate="G$1" x="-193.04" y="172.72"/>
-<instance part="PAD1" gate="1" x="-210.82" y="116.84"/>
-<instance part="PAD2" gate="1" x="-210.82" y="109.22"/>
-<instance part="PAD3" gate="1" x="-210.82" y="101.6"/>
 <instance part="IC3" gate="G$1" x="-73.66" y="53.34"/>
 <instance part="C7" gate="G$1" x="-142.24" y="73.66"/>
 <instance part="C8" gate="G$1" x="-142.24" y="53.34"/>
@@ -1236,23 +1184,6 @@ Dual, Low Power, G = 10, 100</description>
 <junction x="-208.28" y="63.5"/>
 </segment>
 <segment>
-<wire x1="-208.28" y1="109.22" x2="-195.58" y2="109.22" width="0.1524" layer="91"/>
-<label x="-203.2" y="109.22" size="1.778" layer="95"/>
-<pinref part="PAD2" gate="1" pin="P"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-200.66" y1="144.78" x2="-200.66" y2="149.86" width="0.1524" layer="91"/>
-<label x="-200.66" y="147.32" size="1.778" layer="95"/>
-<junction x="-200.66" y="144.78"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-172.72" y1="144.78" x2="-172.72" y2="149.86" width="0.1524" layer="91"/>
-<label x="-172.72" y="147.32" size="1.778" layer="95"/>
-<junction x="-172.72" y="144.78"/>
-</segment>
-<segment>
 <label x="-10.16" y="215.9" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="A"/>
 <junction x="0" y="215.9"/>
@@ -1341,6 +1272,37 @@ Dual, Low Power, G = 10, 100</description>
 <junction x="-129.54" y="83.82"/>
 <label x="-129.54" y="86.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="INA+"/>
+<wire x1="-93.98" y1="182.88" x2="-101.6" y2="182.88" width="0.1524" layer="91"/>
+<label x="-101.6" y="182.88" size="1.778" layer="95"/>
+<junction x="-93.98" y="182.88"/>
+</segment>
+<segment>
+<wire x1="-91.44" y1="162.56" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="INB+"/>
+<wire x1="-93.98" y1="162.56" x2="-111.76" y2="162.56" width="0.1524" layer="91"/>
+<label x="-109.22" y="162.56" size="1.778" layer="95"/>
+<junction x="-93.98" y="162.56"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="INA+"/>
+<wire x1="-124.46" y1="119.38" x2="-96.52" y2="119.38" width="0.1524" layer="91"/>
+<label x="-119.38" y="119.38" size="1.778" layer="95"/>
+<junction x="-96.52" y="119.38"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INB+"/>
+<wire x1="-124.46" y1="35.56" x2="-96.52" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-96.52" y="35.56"/>
+<label x="-119.38" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INA+"/>
+<wire x1="-96.52" y1="55.88" x2="-124.46" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-96.52" y="55.88"/>
+<label x="-119.38" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -1385,55 +1347,7 @@ Dual, Low Power, G = 10, 100</description>
 <junction x="-55.88" y="35.56"/>
 </segment>
 </net>
-<net name="SIGNAL_GROUND" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="INA+"/>
-<wire x1="-93.98" y1="182.88" x2="-101.6" y2="182.88" width="0.1524" layer="91"/>
-<label x="-101.6" y="182.88" size="1.778" layer="95"/>
-<junction x="-93.98" y="182.88"/>
-</segment>
-<segment>
-<wire x1="-208.28" y1="101.6" x2="-182.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="-203.2" y="101.6" size="1.778" layer="95"/>
-<pinref part="PAD3" gate="1" pin="P"/>
-</segment>
-<segment>
-<wire x1="-91.44" y1="162.56" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="INB+"/>
-<wire x1="-93.98" y1="162.56" x2="-111.76" y2="162.56" width="0.1524" layer="91"/>
-<label x="-109.22" y="162.56" size="1.778" layer="95"/>
-<junction x="-93.98" y="162.56"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="INA+"/>
-<wire x1="-124.46" y1="119.38" x2="-96.52" y2="119.38" width="0.1524" layer="91"/>
-<label x="-119.38" y="119.38" size="1.778" layer="95"/>
-<junction x="-96.52" y="119.38"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="INB+"/>
-<wire x1="-124.46" y1="35.56" x2="-96.52" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-96.52" y="35.56"/>
-<label x="-119.38" y="35.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="INA+"/>
-<wire x1="-96.52" y1="55.88" x2="-124.46" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-96.52" y="55.88"/>
-<label x="-119.38" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VGROUND" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-200.66" y1="134.62" x2="-195.58" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-195.58" y1="134.62" x2="-193.04" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-195.58" y="134.62"/>
-<wire x1="-200.66" y1="134.62" x2="-220.98" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-200.66" y="134.62"/>
-<label x="-218.44" y="134.62" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="-190.5" y1="210.82" x2="-177.8" y2="210.82" width="0.1524" layer="91"/>
@@ -1480,21 +1394,6 @@ Dual, Low Power, G = 10, 100</description>
 <pinref part="U$2" gate="G$1" pin="D"/>
 <label x="-215.9" y="167.64" size="1.778" layer="95"/>
 <junction x="-205.74" y="167.64"/>
-</segment>
-</net>
-<net name="FILTERED_VGROUND" class="0">
-<segment>
-<wire x1="-190.5" y1="134.62" x2="-187.96" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-187.96" y1="134.62" x2="-172.72" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="134.62" x2="-172.72" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="116.84" x2="-208.28" y2="116.84" width="0.1524" layer="91"/>
-<label x="-203.2" y="116.84" size="1.778" layer="95"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<junction x="-187.96" y="134.62"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="-172.72" y1="139.7" x2="-172.72" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-172.72" y="134.62"/>
 </segment>
 </net>
 <net name="E2" class="0">
