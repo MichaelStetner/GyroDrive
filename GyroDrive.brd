@@ -9,7 +9,7 @@
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="13" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="13" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="11" fill="6" visible="yes" active="yes"/>
@@ -1721,12 +1721,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R8" library="resistor" package="R0201" value="" x="8.9154" y="11.8364" rot="MR270"/>
 <element name="R9" library="resistor" package="R0201" value="" x="8.9662" y="8.9662" rot="MR270"/>
 <element name="R10" library="resistor" package="R0201" value="" x="8.9154" y="6.096" rot="MR270"/>
-<element name="J_VGND" library="michael-stetner" package="SJ" value="" x="8.3312" y="3.3274" rot="MR90"/>
+<element name="J_VGND" library="michael-stetner" package="SJ" value="" x="9.652" y="17.2212" rot="MR0"/>
 <element name="E2" library="michael-stetner" package="SMD25-25-MIL" value="" x="9.6774" y="11.6332" rot="MR0"/>
 <element name="E3" library="michael-stetner" package="SMD25-25-MIL" value="" x="9.6774" y="8.763" rot="MR0"/>
 <element name="E4" library="michael-stetner" package="SMD25-25-MIL" value="" x="9.6774" y="5.8674" rot="MR0"/>
 <element name="VGND" library="michael-stetner" package="SMD25-25-MIL" value="" x="8.509" y="1.143" rot="MR0"/>
-<element name="AGND" library="michael-stetner" package="SMD25-25-MIL" value="" x="9.652" y="4.445" rot="MR0"/>
 <element name="E1" library="michael-stetner" package="SMD25-25-MIL" value="" x="9.6774" y="14.605" rot="MR0"/>
 <element name="C1" library="resistor" package="C0201" value="" x="5.0292" y="12.6746"/>
 <element name="R1" library="resistor" package="R0201" value="" x="9.5504" y="16.0274" rot="MR0"/>
@@ -1741,6 +1740,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R13" library="resistor" package="R0201" value="" x="9.5758" y="7.3914" rot="MR0"/>
 <element name="C5" library="resistor" package="C0201" value="" x="8.636" y="7.3914" rot="MR0"/>
 <element name="R14" library="resistor" package="R0201" value="" x="7.6454" y="7.3914" rot="MR180"/>
+<element name="R15" library="resistor" package="R0201" value="" x="8.7122" y="2.4638" rot="MR270"/>
+<element name="C6" library="resistor" package="C0201" value="" x="8.1026" y="2.4638" rot="MR90"/>
+<element name="R16" library="resistor" package="R0201" value="" x="8.382" y="3.683" rot="MR0"/>
+<element name="AGND" library="michael-stetner" package="30MIL/15MIL" value="" x="9.7536" y="4.5212"/>
 </elements>
 <signals>
 <signal name="-VS">
@@ -1908,10 +1911,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J_VGND" pad="2"/>
 <wire x1="5.207" y1="3.9624" x2="5.207" y2="3.81" width="0.254" layer="15"/>
 <contactref element="MOTORGND" pad="P$1"/>
-<contactref element="AGND" pad="1"/>
-<wire x1="8.89" y1="4.445" x2="9.652" y2="4.445" width="0.254" layer="16"/>
-<wire x1="8.3312" y1="3.7084" x2="8.89" y2="4.445" width="0.254" layer="16"/>
-<via x="8.89" y="4.445" extent="1-16" drill="0.254"/>
 <contactref element="U$1" pad="D"/>
 <wire x1="6.477" y1="2.1971" x2="6.477" y2="1.4986" width="0.1524" layer="1"/>
 <via x="6.477" y="1.4986" extent="1-16" drill="0.254"/>
@@ -1951,6 +1950,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.4158" y1="13.1318" x2="7.3142" y2="13.208" width="0.1524" layer="16"/>
 <wire x1="7.3142" y1="13.208" x2="6.8834" y2="13.1318" width="0.1524" layer="16"/>
 <via x="6.8834" y="13.1318" extent="1-16" drill="0.254"/>
+<contactref element="R15" pad="1"/>
+<contactref element="R16" pad="1"/>
+<wire x1="8.7122" y1="2.7188" x2="8.637" y2="2.7188" width="0.254" layer="16"/>
+<wire x1="8.637" y1="2.7188" x2="8.637" y2="3.683" width="0.254" layer="16"/>
+<contactref element="AGND" pad="P$1"/>
+<wire x1="9.7536" y1="4.5212" x2="9.4752" y2="4.5212" width="0.254" layer="16"/>
+<wire x1="9.4752" y1="4.5212" x2="8.637" y2="3.683" width="0.254" layer="16"/>
+<wire x1="9.271" y1="17.2212" x2="8.6868" y2="17.2212" width="0.1524" layer="16"/>
+<via x="8.6868" y="17.2212" extent="1-16" drill="0.254"/>
+<wire x1="8.6868" y1="17.2212" x2="8.6868" y2="17.0942" width="0.1524" layer="15"/>
 </signal>
 <signal name="S1">
 <contactref element="IC1" pad="B1"/>
@@ -1980,8 +1989,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC2" pad="A3"/>
 <contactref element="IC3" pad="A3"/>
 <contactref element="IC4" pad="A3"/>
-<wire x1="8.386" y1="5.334" x2="8.9916" y2="5.334" width="0.1524" layer="16"/>
-<wire x1="8.9916" y1="5.334" x2="10.2108" y2="5.334" width="0.1524" layer="16"/>
+<wire x1="8.386" y1="5.334" x2="9.2964" y2="5.334" width="0.1524" layer="16"/>
+<wire x1="9.2964" y1="5.334" x2="10.2108" y2="5.334" width="0.1524" layer="16"/>
 <wire x1="10.2108" y1="5.334" x2="10.2108" y2="8.2162" width="0.1524" layer="16"/>
 <wire x1="10.2108" y1="8.2162" x2="10.2108" y2="11.0864" width="0.1524" layer="16"/>
 <wire x1="10.2108" y1="11.0864" x2="10.2108" y2="14.0074" width="0.1524" layer="16"/>
@@ -1989,16 +1998,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.374" y1="14.0074" x2="10.2108" y2="14.0074" width="0.1524" layer="16"/>
 <wire x1="8.3994" y1="8.2162" x2="10.2108" y2="8.2162" width="0.1524" layer="16"/>
 <contactref element="J_VGND" pad="1"/>
-<contactref element="VGND" pad="1"/>
-<wire x1="8.3312" y1="2.9464" x2="8.382" y2="1.143" width="0.254" layer="16"/>
-<wire x1="8.382" y1="1.143" x2="8.509" y2="1.143" width="0.254" layer="16"/>
-<wire x1="8.3312" y1="2.9464" x2="7.8486" y2="2.9464" width="0.1524" layer="16"/>
-<wire x1="7.8486" y1="2.9464" x2="7.6708" y2="3.1242" width="0.1524" layer="16"/>
-<wire x1="7.6708" y1="3.1242" x2="7.6708" y2="4.0132" width="0.1524" layer="16"/>
-<wire x1="7.6708" y1="4.0132" x2="8.9916" y2="5.334" width="0.1524" layer="16"/>
 <wire x1="8.382" y1="5.338" x2="8.374" y2="5.346" width="0.1524" layer="16"/>
 <wire x1="8.386" y1="5.334" x2="8.374" y2="5.346" width="0.1524" layer="16"/>
-<wire x1="10.2108" y1="14.0074" x2="10.2108" y2="16.383" width="0.1524" layer="16"/>
+<wire x1="10.2108" y1="14.0074" x2="10.2108" y2="17.2212" width="0.1524" layer="16"/>
+<contactref element="R16" pad="2"/>
+<contactref element="C6" pad="2"/>
+<wire x1="8.1026" y1="2.7138" x2="8.127" y2="2.7138" width="0.254" layer="16"/>
+<wire x1="8.127" y1="2.7138" x2="8.127" y2="3.683" width="0.254" layer="16"/>
+<wire x1="8.127" y1="3.683" x2="8.127" y2="4.1646" width="0.1524" layer="16"/>
+<wire x1="8.127" y1="4.1646" x2="9.2964" y2="5.334" width="0.1524" layer="16"/>
+<wire x1="10.2108" y1="17.2212" x2="10.033" y2="17.2212" width="0.1524" layer="16"/>
 </signal>
 <signal name="S3">
 <contactref element="IC3" pad="B1"/>
@@ -2334,6 +2343,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.4114" y1="10.2616" x2="8.3994" y2="10.2496" width="0.1524" layer="16"/>
 <wire x1="8.3994" y1="10.2496" x2="8.3994" y2="9.7162" width="0.1524" layer="16"/>
 <wire x1="8.4114" y1="10.2616" x2="7.875" y2="10.2616" width="0.1524" layer="16"/>
+</signal>
+<signal name="VGND_IN">
+<contactref element="VGND" pad="1"/>
+<contactref element="C6" pad="1"/>
+<contactref element="R15" pad="2"/>
+<wire x1="8.509" y1="1.143" x2="8.7122" y2="1.143" width="0.254" layer="16"/>
+<wire x1="8.7122" y1="1.143" x2="8.7122" y2="2.2088" width="0.254" layer="16"/>
+<wire x1="8.7122" y1="2.2088" x2="8.1026" y2="2.2088" width="0.254" layer="16"/>
+<wire x1="8.1026" y1="2.2088" x2="8.1026" y2="2.2138" width="0.254" layer="16"/>
 </signal>
 </signals>
 <errors>

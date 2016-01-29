@@ -6710,7 +6710,6 @@ LETTER landscape</description>
 <part name="E3" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="E4" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="VGND" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
-<part name="AGND" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="E1" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C0201"/>
 <part name="SUPPLY3" library="supply2" deviceset="DGND" device=""/>
@@ -6734,6 +6733,12 @@ LETTER landscape</description>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0201"/>
 <part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
+<part name="R15" library="resistor" deviceset="R-US_" device="R0201"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="C0201"/>
+<part name="R16" library="resistor" deviceset="R-US_" device="R0201"/>
+<part name="SUPPLY30" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY31" library="supply2" deviceset="AGND" device=""/>
+<part name="AGND" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6837,7 +6842,6 @@ For Debugging</text>
 <instance part="E3" gate="1" x="96.52" y="160.02"/>
 <instance part="E4" gate="1" x="96.52" y="149.86"/>
 <instance part="VGND" gate="1" x="96.52" y="139.7"/>
-<instance part="AGND" gate="1" x="96.52" y="132.08"/>
 <instance part="E1" gate="1" x="96.52" y="177.8"/>
 <instance part="C1" gate="G$1" x="104.14" y="106.68" rot="R90"/>
 <instance part="SUPPLY3" gate="G$1" x="109.22" y="104.14"/>
@@ -6861,6 +6865,15 @@ For Debugging</text>
 <instance part="R14" gate="G$1" x="5.08" y="17.78" rot="R90"/>
 <instance part="SUPPLY10" gate="G$1" x="-7.62" y="10.16"/>
 <instance part="SUPPLY11" gate="G$1" x="5.08" y="10.16"/>
+<instance part="R15" gate="G$1" x="25.4" y="203.2" rot="R90"/>
+<instance part="C6" gate="G$1" x="30.48" y="208.28" rot="R90"/>
+<instance part="R16" gate="G$1" x="38.1" y="203.2" rot="R90"/>
+<instance part="SUPPLY30" gate="G$1" x="25.4" y="195.58"/>
+<instance part="SUPPLY31" gate="G$1" x="38.1" y="195.58"/>
+<instance part="AGND" gate="P" x="96.52" y="132.08" smashed="yes">
+<attribute name="NAME" x="98.933" y="132.0038" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="95.377" y="128.778" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7040,7 +7053,7 @@ For Debugging</text>
 <wire x1="99.06" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <label x="111.76" y="132.08" size="1.778" layer="95"/>
 <pinref part="SUPPLY1" gate="G$1" pin="AGND"/>
-<pinref part="AGND" gate="1" pin="P"/>
+<pinref part="AGND" gate="P" pin="P"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D"/>
@@ -7078,6 +7091,14 @@ For Debugging</text>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="SUPPLY30" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="SUPPLY31" gate="G$1" pin="AGND"/>
 </segment>
 </net>
 <net name="S1" class="0">
@@ -7126,14 +7147,17 @@ For Debugging</text>
 <label x="7.62" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="139.7" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
-<label x="111.76" y="139.7" size="1.778" layer="95"/>
-<pinref part="VGND" gate="1" pin="P"/>
-</segment>
-<segment>
 <pinref part="J_VGND" gate="1" pin="1"/>
 <wire x1="111.76" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<junction x="38.1" y="208.28"/>
+<label x="45.72" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S3" class="0">
@@ -7557,6 +7581,21 @@ For Debugging</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <junction x="5.08" y="63.5"/>
+</segment>
+</net>
+<net name="VGND_IN" class="0">
+<segment>
+<wire x1="99.06" y1="139.7" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
+<label x="111.76" y="139.7" size="1.778" layer="95"/>
+<pinref part="VGND" gate="1" pin="P"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="208.28" x2="12.7" y2="208.28" width="0.1524" layer="91"/>
+<junction x="25.4" y="208.28"/>
+<label x="12.7" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
