@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -49,6 +53,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -512,66 +517,40 @@ Dual, Low Power, G = 10, 100</description>
 <library name="elm">
 <packages>
 <package name="MMD1P22G-26-M101">
-<pad name="A" x="0" y="0" drill="0.8"/>
-<hole x="0" y="0" drill="0.6"/>
-<pad name="D" x="-0.0508" y="2.3876" drill="0.8"/>
-<hole x="0" y="2.3876" drill="0.6"/>
-<pad name="H" x="0" y="4.826" drill="0.8"/>
-<hole x="0" y="4.826" drill="0.6"/>
-<hole x="-0.0508" y="7.2136" drill="0.6"/>
-<pad name="L" x="-0.0508" y="7.2136" drill="0.8"/>
-<pad name="P" x="-0.0508" y="9.5504" drill="0.8"/>
-<hole x="0" y="9.6012" drill="0.6"/>
-<pad name="T" x="0" y="11.938" drill="0.8"/>
-<hole x="0" y="11.938" drill="0.6"/>
-<pad name="W" x="-0.0508" y="14.3256" drill="0.8"/>
-<hole x="0" y="14.3256" drill="0.6"/>
-<pad name="Z" x="0" y="16.764" drill="0.8"/>
-<hole x="0" y="16.764" drill="0.6"/>
-<hole x="-0.0508" y="19.1516" drill="0.6"/>
-<pad name="_C" x="-0.0508" y="19.1516" drill="0.8"/>
-<pad name="C" x="4.1148" y="0" drill="0.8"/>
-<hole x="4.1148" y="0" drill="0.6"/>
-<pad name="F" x="4.064" y="2.3876" drill="0.8"/>
-<hole x="4.1148" y="2.3876" drill="0.6"/>
-<pad name="K" x="4.1148" y="4.826" drill="0.8"/>
-<hole x="4.1148" y="4.826" drill="0.6"/>
-<hole x="4.064" y="7.2136" drill="0.6"/>
-<pad name="N" x="4.064" y="7.2136" drill="0.8"/>
-<pad name="S" x="4.064" y="9.5504" drill="0.8"/>
-<hole x="4.1148" y="9.6012" drill="0.6"/>
-<pad name="V" x="4.1148" y="11.938" drill="0.8"/>
-<hole x="4.1148" y="11.938" drill="0.6"/>
-<pad name="Y" x="4.064" y="14.3256" drill="0.8"/>
-<hole x="4.1148" y="14.3256" drill="0.6"/>
-<pad name="_B" x="4.1148" y="16.764" drill="0.8"/>
-<hole x="4.1148" y="16.764" drill="0.6"/>
-<hole x="4.064" y="19.1516" drill="0.6"/>
-<pad name="_D" x="4.064" y="19.1516" drill="0.8"/>
-<pad name="B" x="1.9812" y="1.2192" drill="0.8"/>
-<hole x="1.9812" y="1.2192" drill="0.6"/>
-<pad name="E" x="1.9304" y="3.6068" drill="0.8"/>
-<hole x="1.9812" y="3.6068" drill="0.6"/>
-<pad name="J" x="1.9812" y="6.0452" drill="0.8"/>
-<hole x="1.9812" y="6.0452" drill="0.6"/>
-<hole x="1.9304" y="8.4328" drill="0.6"/>
-<pad name="M" x="1.9304" y="8.4328" drill="0.8"/>
-<pad name="R" x="1.9304" y="10.7696" drill="0.8"/>
-<hole x="1.9812" y="10.8204" drill="0.6"/>
-<pad name="U" x="1.9812" y="13.1572" drill="0.8"/>
-<hole x="1.9812" y="13.1572" drill="0.6"/>
-<pad name="X" x="1.9304" y="15.5448" drill="0.8"/>
-<hole x="1.9812" y="15.5448" drill="0.6"/>
-<pad name="_A" x="1.9812" y="17.9832" drill="0.8"/>
-<hole x="1.9812" y="17.9832" drill="0.6"/>
 <rectangle x1="-7.62" y1="-6.35" x2="-1.778" y2="25.4" layer="21"/>
+<pad name="A" x="0" y="0" drill="0.8"/>
+<pad name="B" x="1.9812" y="1.2192" drill="0.8"/>
+<pad name="C" x="4.1148" y="0" drill="0.8"/>
+<pad name="D" x="-0.0508" y="2.3876" drill="0.8"/>
+<pad name="E" x="1.9304" y="3.6068" drill="0.8"/>
+<pad name="F" x="4.064" y="2.3876" drill="0.8"/>
+<pad name="H" x="0" y="4.826" drill="0.8"/>
+<pad name="J" x="1.9812" y="6.0452" drill="0.8"/>
+<pad name="K" x="4.1148" y="4.826" drill="0.8"/>
+<pad name="L" x="-0.0508" y="7.2136" drill="0.8"/>
+<pad name="M" x="1.9304" y="8.4328" drill="0.8"/>
+<pad name="N" x="4.064" y="7.2136" drill="0.8"/>
+<pad name="P" x="-0.0508" y="9.5504" drill="0.8"/>
+<pad name="R" x="1.9304" y="10.7696" drill="0.8"/>
+<pad name="S" x="4.064" y="9.5504" drill="0.8"/>
+<pad name="T" x="0" y="11.938" drill="0.8"/>
+<pad name="U" x="1.9812" y="13.1572" drill="0.8"/>
+<pad name="V" x="4.1148" y="11.938" drill="0.8"/>
+<pad name="W" x="-0.0508" y="14.3256" drill="0.8"/>
+<pad name="X" x="1.9304" y="15.5448" drill="0.8"/>
+<pad name="Y" x="4.064" y="14.3256" drill="0.8"/>
+<pad name="Z" x="0" y="16.764" drill="0.8"/>
+<pad name="_A" x="1.9812" y="17.9832" drill="0.8"/>
+<pad name="_B" x="4.1148" y="16.764" drill="0.8"/>
+<pad name="_C" x="-0.0508" y="19.1516" drill="0.8"/>
+<pad name="_D" x="4.064" y="19.1516" drill="0.8"/>
 </package>
 <package name="HALL_ON_SIDE">
 <smd name="A" x="-0.8382" y="0" dx="1.1176" dy="1.6002" layer="1"/>
 <smd name="B" x="0.889" y="0" dx="1.1176" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<smd name="D" x="-1.524" y="-2.4638" dx="1.1176" dy="1.6002" layer="1" rot="R90"/>
 <smd name="C" x="1.6764" y="-2.5146" dx="1.1176" dy="1.6002" layer="1" rot="R90"/>
+<smd name="D" x="-1.524" y="-2.4638" dx="1.1176" dy="1.6002" layer="1" rot="R90"/>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="R0805ELM">
 <wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.127" layer="21"/>
@@ -588,6 +567,8 @@ Dual, Low Power, G = 10, 100</description>
 <symbol name="MMDP22-26">
 <wire x1="-5.08" y1="-38.1" x2="-5.08" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="30.48" x2="2.54" y2="30.48" width="0.254" layer="94"/>
+<wire x1="2.54" y1="30.48" x2="2.54" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-38.1" x2="2.54" y2="-38.1" width="0.254" layer="94"/>
 <pin name="A" x="-10.16" y="27.94" length="middle"/>
 <pin name="B" x="-10.16" y="25.4" length="middle"/>
 <pin name="C" x="-10.16" y="22.86" length="middle"/>
@@ -606,8 +587,6 @@ Dual, Low Power, G = 10, 100</description>
 <pin name="T" x="-10.16" y="-10.16" length="middle"/>
 <pin name="U" x="-10.16" y="-12.7" length="middle"/>
 <pin name="V" x="-10.16" y="-15.24" length="middle"/>
-<wire x1="2.54" y1="30.48" x2="2.54" y2="-38.1" width="0.254" layer="94"/>
-<text x="-5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 <pin name="W" x="-10.16" y="-17.78" length="middle"/>
 <pin name="X" x="-10.16" y="-20.32" length="middle"/>
 <pin name="Y" x="-10.16" y="-22.86" length="middle"/>
@@ -616,14 +595,14 @@ Dual, Low Power, G = 10, 100</description>
 <pin name="_B" x="-10.16" y="-30.48" length="middle"/>
 <pin name="_C" x="-10.16" y="-33.02" length="middle"/>
 <pin name="_D" x="-10.16" y="-35.56" length="middle"/>
-<wire x1="-5.08" y1="-38.1" x2="2.54" y2="-38.1" width="0.254" layer="94"/>
+<text x="-5.08" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="HALL_SENSOR">
 <rectangle x1="-7.62" y1="-7.62" x2="7.62" y2="7.62" layer="94"/>
 <pin name="A" x="-12.7" y="5.08" length="middle"/>
-<pin name="D" x="-12.7" y="-5.08" length="middle"/>
 <pin name="B" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="C" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="D" x="-12.7" y="-5.08" length="middle"/>
 </symbol>
 <symbol name="R-US">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
@@ -635,20 +614,21 @@ Dual, Low Power, G = 10, 100</description>
 <wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
 <wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="C-US">
 <wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.0161" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.0161" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="1" y1="0" x2="1.8542" y2="2.4892" width="0.254" layer="94" curve="-37.878202"/>
 <wire x1="1.8504" y1="-2.4668" x2="1.0161" y2="0" width="0.254" layer="94" curve="-37.373024"/>
-<text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
