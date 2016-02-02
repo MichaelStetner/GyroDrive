@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -7437,28 +7437,18 @@ by exp-lbrs.ulp</description>
 <part name="E4" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="VGND" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
 <part name="E1" library="michael-stetner" deviceset="SMD25-25-MIL" device=""/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="C2222" library="resistor" deviceset="C-EU" device="C0201"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="AGND" device=""/>
+<part name="C14" library="resistor" deviceset="C-EU" device="C0201"/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="C3XXX" library="resistor" deviceset="C-EU" device="C0201"/>
-<part name="R13" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="SUPPLY6" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="AGND" device=""/>
+<part name="C15" library="resistor" deviceset="C-EU" device="C0201"/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="C4XX" library="resistor" deviceset="C-EU" device="C0201"/>
-<part name="R14" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="SUPPLY8" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
+<part name="C16" library="resistor" deviceset="C-EU" device="C0201"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="C5XX" library="resistor" deviceset="C-EU" device="C0201"/>
-<part name="SUPPLY10" library="supply2" deviceset="AGND" device=""/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="C6XX" library="resistor" deviceset="C-EU" device="C0201"/>
-<part name="R16" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="SUPPLY30" library="supply2" deviceset="AGND" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="AGND" device=""/>
+<part name="C17" library="resistor" deviceset="C-EU" device="C0201"/>
+<part name="C13" library="resistor" deviceset="C-EU" device="C0201"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0201"/>
 <part name="SUPPLY31" library="supply2" deviceset="AGND" device=""/>
 <part name="AGND" library="michael-stetner" deviceset="THROUGH-HOLE-30MIL/15MIL" device=""/>
 <part name="U3" library="AD8426x2 wide" deviceset="ANALOG-DEVICES-E14_AD8426ACPZ-R7" device=""/>
@@ -7476,7 +7466,7 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY20" library="supply2" deviceset="AGND" device=""/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0201"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0201"/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0201"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0201"/>
 <part name="SUPPLY21" library="supply2" deviceset="AGND" device=""/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0603"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C0603"/>
@@ -7558,28 +7548,18 @@ For Debugging</text>
 <instance part="E4" gate="1" x="96.52" y="149.86"/>
 <instance part="VGND" gate="1" x="96.52" y="139.7"/>
 <instance part="E1" gate="1" x="96.52" y="177.8"/>
-<instance part="R7" gate="G$1" x="-7.62" y="144.78" rot="R90"/>
-<instance part="C2222" gate="G$1" x="-2.54" y="149.86" rot="R90"/>
-<instance part="R12" gate="G$1" x="5.08" y="144.78" rot="R90"/>
-<instance part="SUPPLY4" gate="G$1" x="-7.62" y="137.16"/>
+<instance part="C14" gate="G$1" x="-2.54" y="149.86" rot="R90"/>
+<instance part="R8" gate="G$1" x="5.08" y="144.78" rot="R90"/>
 <instance part="SUPPLY5" gate="G$1" x="5.08" y="137.16"/>
-<instance part="R8" gate="G$1" x="-7.62" y="99.06" rot="R90"/>
-<instance part="C3XXX" gate="G$1" x="-2.54" y="104.14" rot="R90"/>
-<instance part="R13" gate="G$1" x="5.08" y="99.06" rot="R90"/>
-<instance part="SUPPLY6" gate="G$1" x="-7.62" y="91.44"/>
+<instance part="C15" gate="G$1" x="-2.54" y="104.14" rot="R90"/>
+<instance part="R9" gate="G$1" x="5.08" y="99.06" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="5.08" y="91.44"/>
-<instance part="R9" gate="G$1" x="-7.62" y="58.42" rot="R90"/>
-<instance part="C4XX" gate="G$1" x="-2.54" y="63.5" rot="R90"/>
-<instance part="R14" gate="G$1" x="5.08" y="58.42" rot="R90"/>
-<instance part="SUPPLY8" gate="G$1" x="-7.62" y="50.8"/>
+<instance part="C16" gate="G$1" x="-2.54" y="63.5" rot="R90"/>
+<instance part="R10" gate="G$1" x="5.08" y="58.42" rot="R90"/>
 <instance part="SUPPLY9" gate="G$1" x="5.08" y="50.8"/>
-<instance part="R10" gate="G$1" x="-7.62" y="17.78" rot="R90"/>
-<instance part="C5XX" gate="G$1" x="-2.54" y="22.86" rot="R90"/>
-<instance part="SUPPLY10" gate="G$1" x="-7.62" y="10.16"/>
-<instance part="R11" gate="G$1" x="25.4" y="203.2" rot="R90"/>
-<instance part="C6XX" gate="G$1" x="30.48" y="208.28" rot="R90"/>
-<instance part="R16" gate="G$1" x="38.1" y="203.2" rot="R90"/>
-<instance part="SUPPLY30" gate="G$1" x="25.4" y="195.58"/>
+<instance part="C17" gate="G$1" x="-2.54" y="22.86" rot="R90"/>
+<instance part="C13" gate="G$1" x="30.48" y="208.28" rot="R90"/>
+<instance part="R7" gate="G$1" x="38.1" y="203.2" rot="R90"/>
 <instance part="SUPPLY31" gate="G$1" x="38.1" y="195.58"/>
 <instance part="AGND" gate="P" x="96.52" y="132.08" smashed="yes">
 <attribute name="NAME" x="98.933" y="132.0038" size="1.778" layer="95" rot="R180"/>
@@ -7600,7 +7580,7 @@ For Debugging</text>
 <instance part="SUPPLY20" gate="G$1" x="218.44" y="256.54"/>
 <instance part="R5" gate="G$1" x="231.14" y="251.46" rot="R180"/>
 <instance part="R6" gate="G$1" x="231.14" y="243.84" rot="R180"/>
-<instance part="R15" gate="G$1" x="2.54" y="17.78" rot="R90"/>
+<instance part="R11" gate="G$1" x="2.54" y="17.78" rot="R90"/>
 <instance part="SUPPLY21" gate="G$1" x="2.54" y="10.16"/>
 <instance part="C11" gate="G$1" x="58.42" y="83.82"/>
 <instance part="C12" gate="G$1" x="73.66" y="83.82"/>
@@ -7711,39 +7691,19 @@ For Debugging</text>
 <label x="170.18" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="SUPPLY4" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="SUPPLY5" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="SUPPLY6" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="SUPPLY7" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="SUPPLY9" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="SUPPLY10" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="SUPPLY30" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="SUPPLY31" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
@@ -7784,7 +7744,7 @@ For Debugging</text>
 <junction x="231.14" y="259.08"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="SUPPLY21" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
@@ -7827,9 +7787,9 @@ For Debugging</text>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="C6XX" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
 <junction x="38.1" y="208.28"/>
 <label x="45.72" y="208.28" size="1.778" layer="95"/>
@@ -8082,11 +8042,8 @@ For Debugging</text>
 <label x="111.76" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C2222" gate="G$1" pin="1"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="149.86" x2="-7.62" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="149.86" x2="-22.86" y2="149.86" width="0.1524" layer="91"/>
-<junction x="-7.62" y="149.86"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="149.86" x2="-22.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="-22.86" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8097,11 +8054,8 @@ For Debugging</text>
 <pinref part="E2" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="C3XXX" gate="G$1" pin="1"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="104.14" x2="-7.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-7.62" y="104.14"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
 <label x="-22.86" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8112,11 +8066,8 @@ For Debugging</text>
 <pinref part="E3" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="C4XX" gate="G$1" pin="1"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="63.5" x2="-20.32" y2="63.5" width="0.1524" layer="91"/>
-<junction x="-7.62" y="63.5"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="63.5" x2="-20.32" y2="63.5" width="0.1524" layer="91"/>
 <label x="-17.78" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8127,11 +8078,8 @@ For Debugging</text>
 <pinref part="E4" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="C5XX" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-7.62" y="22.86"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="-20.32" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8161,8 +8109,8 @@ For Debugging</text>
 </net>
 <net name="E1_FILT" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="C2222" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="149.86" x2="2.54" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <junction x="5.08" y="149.86"/>
@@ -8181,11 +8129,8 @@ For Debugging</text>
 <pinref part="VGND" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="C6XX" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="208.28" x2="12.7" y2="208.28" width="0.1524" layer="91"/>
-<junction x="25.4" y="208.28"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="208.28" x2="12.7" y2="208.28" width="0.1524" layer="91"/>
 <label x="12.7" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8229,8 +8174,8 @@ For Debugging</text>
 <label x="111.76" y="269.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="C3XXX" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="104.14" x2="2.54" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <junction x="5.08" y="104.14"/>
@@ -8244,8 +8189,8 @@ For Debugging</text>
 <label x="223.52" y="274.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="C4XX" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
 <junction x="5.08" y="63.5"/>
@@ -8259,8 +8204,8 @@ For Debugging</text>
 <label x="223.52" y="271.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C5XX" gate="G$1" pin="2"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <junction x="2.54" y="22.86"/>
 <label x="15.24" y="22.86" size="1.778" layer="95"/>
