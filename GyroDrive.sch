@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2772,7 +2772,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="51"/>
+<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
 </package>
 <package name="VMTA55">
 <description>&lt;b&gt;Bulk Metal® Foil Technology&lt;/b&gt;, Tubular Axial Lead Resistors, Meets or Exceeds MIL-R-39005 Requirements&lt;p&gt;
@@ -6214,6 +6214,11 @@ Pad diameter: 30 mil</description>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<rectangle x1="-0.85" y1="0.45" x2="-0.45" y2="1.2" layer="31"/>
+<rectangle x1="0.45" y1="0.45" x2="0.85" y2="1.2" layer="31"/>
+<rectangle x1="-0.8382" y1="-1.1684" x2="-0.508" y2="-0.4826" layer="31"/>
+<rectangle x1="-0.1651" y1="-1.1684" x2="0.1651" y2="-0.4826" layer="31"/>
+<rectangle x1="0.508" y1="-1.1684" x2="0.8382" y2="-0.4826" layer="31"/>
 <smd name="1" x="-0.65" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <smd name="2" x="0" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <smd name="3" x="0.65" y="-0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
@@ -6221,11 +6226,6 @@ Pad diameter: 30 mil</description>
 <smd name="5" x="-0.65" y="0.825" dx="0.4" dy="0.75" layer="1" cream="no"/>
 <text x="-0.889" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.85" y1="0.45" x2="-0.45" y2="1.2" layer="31"/>
-<rectangle x1="0.45" y1="0.45" x2="0.85" y2="1.2" layer="31"/>
-<rectangle x1="-0.8382" y1="-1.1684" x2="-0.508" y2="-0.4826" layer="31"/>
-<rectangle x1="-0.1651" y1="-1.1684" x2="0.1651" y2="-0.4826" layer="31"/>
-<rectangle x1="0.508" y1="-1.1684" x2="0.8382" y2="-0.4826" layer="31"/>
 </package>
 <package name="SJ">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
@@ -6233,11 +6233,17 @@ Pad diameter: 30 mil</description>
 <wire x1="-0.381" y1="0" x2="-0.635" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.254" y1="-0.0762" x2="-0.254" y2="0.0762" width="0.254" layer="51" curve="-180" cap="flat"/>
 <wire x1="0.254" y1="0.0762" x2="0.254" y2="-0.0762" width="0.254" layer="51" curve="-180" cap="flat"/>
+<rectangle x1="-0.0762" y1="-0.381" x2="0.0762" y2="0.381" layer="29"/>
 <smd name="1" x="-0.381" y="0" dx="0.508" dy="0.508" layer="1"/>
 <smd name="2" x="0.381" y="0" dx="0.508" dy="0.508" layer="1"/>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.381" x2="0.0762" y2="0.381" layer="29"/>
+</package>
+<package name="SMD25-25-MIL">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="SJW">
 <description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
@@ -6255,10 +6261,6 @@ Pad diameter: 30 mil</description>
 <wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
 <wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
-<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
 <rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
 <rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
@@ -6275,12 +6277,10 @@ Pad diameter: 30 mil</description>
 <rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
-</package>
-<package name="SMD25-25-MIL">
-<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
-<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1"/>
-<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
-<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -6303,21 +6303,21 @@ Pad diameter: 30 mil</description>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-0.254" y="5.842" size="1.778" layer="94">&gt;NAME</text>
-<text x="-11.43" y="5.842" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
 <pin name="IN" x="-12.7" y="0" length="middle"/>
 <pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
+<text x="-0.254" y="5.842" size="1.778" layer="94">&gt;NAME</text>
+<text x="-11.43" y="5.842" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="SJ">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6481,7 +6481,6 @@ by exp-lbrs.ulp</description>
 <smd name="22" x="-0.2" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 <smd name="23" x="-0.6" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
 <smd name="24" x="-1" y="1.6" dx="0.6" dy="0.2" layer="1" rot="R270"/>
-<smd name="25" x="0" y="0" dx="1.7" dy="1.54" layer="1" roundness="50"/>
 <text x="-1.27" y="2.159" size="0.889" layer="25" ratio="11">&gt;NAME</text>
 <text x="-1.27" y="-0.635" size="0.635" layer="27" ratio="11">&gt;VALUE</text>
 </package>
@@ -6529,7 +6528,6 @@ by exp-lbrs.ulp</description>
 <wire x1="-12.7" y1="-10.16" x2="-11.43" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="-12.7" y1="-12.7" x2="-11.43" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="-13.97" y1="-15.24" x2="-11.43" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="0" y1="-19.05" x2="0" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="11.43" y1="-15.24" x2="10.16" y2="-15.24" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="94"/>
 <wire x1="11.43" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
@@ -6558,7 +6556,6 @@ by exp-lbrs.ulp</description>
 <pin name="NC@7" x="13.97" y="-7.62" length="short" rot="R180"/>
 <pin name="NC@8" x="13.97" y="-5.08" length="short" rot="R180"/>
 <pin name="NCS" x="13.97" y="7.62" length="short" rot="R180"/>
-<pin name="PAD" x="0" y="-21.59" length="short" rot="R90"/>
 <pin name="REGOUT" x="-15.24" y="-10.16" length="short"/>
 <pin name="RESV" x="-15.24" y="12.7" length="short"/>
 <pin name="RESV@1" x="13.97" y="0" length="short" rot="R180"/>
@@ -6595,7 +6592,6 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="NC@7" pad="16"/>
 <connect gate="G$1" pin="NC@8" pad="17"/>
 <connect gate="G$1" pin="NCS" pad="22"/>
-<connect gate="G$1" pin="PAD" pad="25"/>
 <connect gate="G$1" pin="REGOUT" pad="10"/>
 <connect gate="G$1" pin="RESV" pad="1"/>
 <connect gate="G$1" pin="RESV@1" pad="19"/>
