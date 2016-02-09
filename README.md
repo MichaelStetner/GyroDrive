@@ -49,3 +49,4 @@ Here is the same pinout for the connector pins, as viewed looking head on into t
 |----------------------------------------------------------------|/
                             Board side
 ```
+ 
