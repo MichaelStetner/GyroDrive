@@ -34,3 +34,9 @@ eagle.epf
 *.info
 
 *.eps
+
+# Gerber files
+gerbers/*
+
+# EagleUp, 3-D models of EAGLE designs
+eagleup/*
