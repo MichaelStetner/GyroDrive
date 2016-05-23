@@ -40,3 +40,6 @@ gerbers/*
 
 # EagleUp, 3-D models of EAGLE designs
 eagleup/*
+
+#SketchUp backup files
+*.skb
